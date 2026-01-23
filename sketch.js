@@ -13,7 +13,7 @@ function preload(){
 let myFont;
 
 function preload() {
-  myFont = loadFont('assets/Roboto-Regular.ttf');
+  myFont = loadFont('fonts/Montserrat');
 }
 
 
