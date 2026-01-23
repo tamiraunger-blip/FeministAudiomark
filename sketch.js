@@ -10,6 +10,11 @@ function preload(){
   sound.push("assets/sound1.mp3");
   sound.push("assets/sound2.mp3");
   ...*/
+let myFont;
+
+function preload() {
+  myFont = loadFont('assets/Roboto-Regular.ttf');
+}
 
 
 
@@ -54,6 +59,13 @@ function setup() {
     });
       
   }, 3000);
+
+  function setup() {
+  createCanvas(400, 200);
+  textFont(myFont);
+  textSize(32);
+}
+
 }
 
 
