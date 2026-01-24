@@ -15,7 +15,7 @@ function preload(){
 let myFont;
 
 function preload() {
-  myFont = loadFont('fonts/Montserrat');
+  myFont = loadFont('fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 
 
