@@ -5,6 +5,8 @@ let sounds = [];
 
 let soundSymbol;
 
+let myFont; // <<< hinzugefügt
+
 function preload(){
  /* sound.push("assets/sound0.mp3");
   sound.push("assets/sound1.mp3");
@@ -24,14 +26,31 @@ function preload() {
 function setup() { 
   let canvas = createCanvas(400, 400);
   canvas.hide();
-  input = document.querySelector("#eingabe");
-  soundSymbol = select("#sound");
 
-  for(let i = 0; i<sound.length; i++){
-  sound[i].onended(()=>{
-    soundSymbol.hide();
-  })
-}
+
+input = document.querySelector("#eingabe");
+soundSymbol = select("#sound");
+soundSymbol.hide();
+
+// Placeholder setzen
+input.placeholder = "Hier Text eingeben";
+
+// Event Listener für Input
+input.addEventListener("input", (event) => {
+  const value = event.target.value.trim().toLowerCase();
+
+  if (words.includes(value)) {
+    input.placeholder = ""; // verschwindet
+    console.log(`Eingabe stimmt mit '${value}' überein`);
+    soundSymbol.show();     // Sound-Symbol optional anzeigen
+  } else {
+    input.placeholder = "Hier Text eingeben"; // wieder anzeigen
+    soundSymbol.hide();                     // Symbol ausblenden
+  }
+}); 
+
+
+
   soundSymbol.hide();
   input.addEventListener ("input", (event) => {
     for(let i = 0; i<words.length; i++){
@@ -58,7 +77,7 @@ function setup() {
       el.classList.add("fadeIn");
     });
       
-  }, 3000);
+  }, 1500);
 
   function setup() {
   createCanvas(400, 200);

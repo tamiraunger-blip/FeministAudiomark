@@ -2,9 +2,9 @@ html, body {
   margin: 10px;
   padding: 0px;
   background-color: #a6a6ac;
-  width: 1000px
-  
+  width: 100%
 }
+
 
 
 canvas {
@@ -13,16 +13,17 @@ canvas {
 
 input{
   height: 30px;
-  width: 780px;
+  width: 495px;
   background-color: #e06571;
-  margin: 5pt;
+  margin-left: 20px;
+  margin-top: 0pt;
   padding: 0;
 }
 
 #logo {
-  height: 200px;
+  height: 150px;
   margin-top: 20px;
-  margin-left: 0px;
+  margin-left: 15px;
   /* width: 780px; */
 
 
@@ -30,6 +31,8 @@ input{
 
 #sound {
   width: 50px;
+  margin-top: -28px;
+  margin-left: 520px;
 }
 
 p {
@@ -50,6 +53,14 @@ g {
   margin: 17pt;
   padding: 0pt;
 }
+.kleinerTextAnfang {
+  font-family: Montserrat;
+  font-weight: medium;
+  color: #e06571;
+  font-size: 20pt;
+  margin: 15pt;
+  padding: 0pt;
+}
 
 
 .kleinerText {
@@ -61,7 +72,15 @@ g {
   padding: 0pt;
 }
 
-
+.EingabefeldText {
+  font-family: Montserrat;
+  font-weight: 300;
+  color: #000000;
+  font-size: 10pt;
+  margin-left: 20pt;
+  margin-top: -17pt;
+  padding: 0pt;
+}
 a{
   color: #000000;
   margin: 15pt;
@@ -75,9 +94,9 @@ a{
 
 .startHidden {
   opacity: 0;
-  transition: opacity 5s ease-in;
-  -moz-transition: opacity 5s;
-  -webkit-transition: opacity 5s;
+  transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s;
+  -webkit-transition: opacity 2s;
  
 }
 
