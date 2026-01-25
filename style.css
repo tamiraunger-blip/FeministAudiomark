@@ -26,7 +26,7 @@ canvas {
 
 input{
   height: 30px;
-  width: 15%;
+  width: 50%;
   background-color: #e06571;
   margin-left: 20px;
   margin-top: 0pt;
@@ -45,7 +45,7 @@ input{
 #sound {
   width: 50px;
   margin-top: -28px;
-  margin-left: 260px;
+  margin-left: 55%;
 }
 
 p {
