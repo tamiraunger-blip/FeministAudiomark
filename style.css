@@ -48,9 +48,9 @@ input::placeholder {
 
 
 #logo {
-  height: 150px;
-  margin-top: -80px;
-  margin-left: 310px;
+  height: 100px;
+  margin-top: -65px;
+  margin-left: 300px;
   /* width: 780px; */
 
 
@@ -69,7 +69,7 @@ p {
   font-weight: bold;
   color: #000000;
   font-size: 500%;
-  margin-top: -80px;
+  margin-top: -60px;
   margin-left: 0px;
   padding: 0;
   line-height: 1;
