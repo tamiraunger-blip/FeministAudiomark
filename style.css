@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
 html, body {
   margin: 10px;
   padding: 0px;
@@ -13,7 +21,7 @@ canvas {
 
 input{
   height: 30px;
-  width: 32.25%;
+  width: 495px;
   background-color: #e06571;
   margin-left: 20px;
   margin-top: 0pt;
