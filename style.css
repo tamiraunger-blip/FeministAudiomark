@@ -19,7 +19,6 @@ html, body {
 }
 
 
-
 canvas {
   display: block;
  }
@@ -29,7 +28,7 @@ input{
   width: 80%;
   background-color: #e06571;
   margin-left: 65px;
-  margin-top: 30px;
+  margin-top: 0px;
   padding: 0;
 
 }
@@ -67,7 +66,7 @@ p {
   margin-top: -75px;
   margin-left: 5px;
   padding: 0;
-
+  line-height: 1;
 }
 
 .text {
@@ -78,7 +77,7 @@ p {
   font-size: 65pt;
   margin-left: 100px;
   padding: 0;
-
+ line-height: 1;
 }
 
 
@@ -91,6 +90,7 @@ p {
   margin-top: 30pt;
   margin-left: 10px;
   padding: 0pt;
+   line-height: 1;
 }
 
 
@@ -102,6 +102,7 @@ p {
   font-size: 10pt;
   margin-left: 10px;
   padding: 0pt;
+   line-height: 1;
 }
 
 .EingabefeldText {

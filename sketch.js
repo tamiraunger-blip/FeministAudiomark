@@ -1,5 +1,5 @@
 let input;
-let words = ["Geschichte der Ungleichheit", "Entfaltung der neuen Weiblichkeit", "Vielzahl der Orientierungen", "Matriarchat", "Antiwerbung mit Störaktionen"];
+let words = ["hund", "Geschichte der Ungleichheit", "Entfaltung der neuen Weiblichkeit", "Vielzahl der Orientierungen", "Matriarchat", "Antiwerbung mit Störaktionen"];
 
 let sounds = [];
 
