@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+   src: url("fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  src: url("fonts/Montserrat/static/") format("truetype");
   font-weight: Medium;
 }
 
@@ -50,7 +50,7 @@ input{
 
 p {
   font-family: "Montserrat";
-   src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+   src: url("fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   color: #000000;
   font-size: 65pt;
@@ -61,7 +61,7 @@ p {
 
 .großerText{
   font-family: "Montserrat";
-   src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+   src: url("fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   color: #000000;
   font-size: 65pt;
@@ -71,7 +71,7 @@ p {
 
 g {
  font-family: "Montserrat";
-  src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+   src: url("fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   color: #000000;
   font-size: 10pt;
@@ -80,7 +80,7 @@ g {
 }
 .kleinerTextAnfang {
   font-family: "Montserrat";
-   src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+   src: url("fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: Medium;
   color: #e06571;
   font-size: 20pt;
@@ -91,7 +91,7 @@ g {
 
 .kleinerText {
   font-family: "Montserrat";
-   src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+   src: url("fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: Bold;
   color: #000000;
   font-size: 20pt;
@@ -101,7 +101,7 @@ g {
 
 .EingabefeldText {
  font-family: "Montserrat";
-  src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+   src: url("fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   color: #000000;
   font-size: 10pt;
