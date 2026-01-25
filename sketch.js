@@ -35,18 +35,6 @@ soundSymbol.hide();
 // Placeholder setzen
 input.placeholder = "Hier Text eingeben";
 
-input.addEventListener("input", (event) => {
-  const word = event.target.value;
-  const length = word.length;
-
-  const factor = 6;
-  const offset = length * factor;
-
-  soundSymbol.style.left = offset + px;
-});
-
-
-
 // Event Listener für Input
 input.addEventListener("input", (event) => {
   const value = event.target.value.trim().toLowerCase();
