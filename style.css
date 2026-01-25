@@ -25,10 +25,10 @@ canvas {
 
 input{
   height: 40px;
-  width: 80%;
+  width: 89%;
   background-color: #e06571;
   margin-left: 65px;
-  margin-top: 0px;
+  margin-top: 10px;
   padding: 0;
 
 }
@@ -38,6 +38,10 @@ input{
 input::placeholder {
   color: var(--placeholder-color);
   opacity: 1; /* sonst wirkt er leicht transparent */
+    font-family: "Montserrat";
+   src: url("fonts/Montserrat/static/Montserrat-Medium.ttf") format("truetype");
+  font-weight: Medium;
+  font-size: 10pt;
 }
 
 
@@ -62,8 +66,8 @@ p {
    src: url("fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   color: #000000;
-  font-size: 600%;
-  margin-top: -75px;
+  font-size: 500%;
+  margin-top: -80px;
   margin-left: 5px;
   padding: 0;
   line-height: 1;
@@ -84,10 +88,10 @@ p {
 .kleinerTextAnfang {
   font-family: "Montserrat";
    src: url("fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
-  font-weight: Medium;
+  font-weight: bold;
   color: #e06571;
   font-size: 20pt;
-  margin-top: 30pt;
+  margin-top: 30px;
   margin-left: 10px;
   padding: 0pt;
    line-height: 1;
@@ -96,10 +100,11 @@ p {
 
 .kleinerText {
   font-family: "Montserrat";
-   src: url("fonts/Montserrat/static/Montserrat-Medium.ttf") format("truetype");
-  font-weight: Medium;
+   src: url("fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;  
   color: #000000;
   font-size: 10pt;
+  margin-top: -70px;
   margin-left: 10px;
   padding: 0pt;
    line-height: 1;
