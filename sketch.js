@@ -33,7 +33,7 @@ soundSymbol = select("#sound");
 soundSymbol.hide();
 
 // Placeholder setzen
-input.placeholder = "Hier Text eingeben";
+input.placeholder = " Hier Text eingeben";
 
 // Event Listener für Input
 input.addEventListener("input", (event) => {
