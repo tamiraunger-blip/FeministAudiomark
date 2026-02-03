@@ -7,24 +7,38 @@ let soundSymbol;
 
 let myFont; // <<< hinzugefügttt
 
-function preload(){
-  sounds.push (loadSound ("assets/Seite-26-Geschichte-der-Ungleichheit.mp3"));
-  sounds.push (loadSound ("assets/Seite-104-Entfaltung-der-neuen-Weiblichkeit.mp3"));
-  sounds.push (loadSound ("assets/Seite-190-Matriarchat.mp3"));
-  sounds.push (loadSound ("assets/Seite-261-Vielzahl-der-Orientierungen.mp3"));
-  sounds.push (loadSound ("assets/Seite-290-Antiwerbung-mit-Stoeraktionen.mp3"));
-let myFont;
-
-  myFont = loadFont('fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
-}
-
- function touchStarted() {
+function touchStarted() {
   userStartAudio();
 }
 
 function mousePressed() {
   userStartAudio();
 }
+
+function preload(){
+  sounds.push (loadSound ("assets/Seite-26-Geschichte-der-Ungleichheit.mp3"));
+  sounds.push (loadSound ("assets/Seite-104-Entfaltung-der-neuen-Weiblichkeit.mp3"));
+  sounds.push (loadSound ("assets/Seite-190-Matriarchat.mp3"));
+  sounds.push (loadSound ("assets/Seite-261-Vielzahl-der-Orientierungen.mp3"));
+  sounds.push (loadSound ("assets/Seite-290-Antiwerbung-mit-Stoeraktionen.mp3"));
+
+  myFont = loadFont('fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+let audioUnlocked = false;
+
+function unlockAudio() {
+  if (!audioUnlocked) {
+    userStartAudio();
+    audioUnlocked = true;
+    document.body.removeEventListener("touchstart", unlockAudio);
+    document.body.removeEventListener("click", unlockAudio);
+  }
+}
+
+// Listener einmalig registrieren
+document.body.addEventListener("touchstart", unlockAudio);
+document.body.addEventListener("click", unlockAudio);
+
 
 
 function setup() { 
