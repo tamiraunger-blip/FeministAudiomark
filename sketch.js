@@ -12,7 +12,7 @@ function preload(){
   sounds.push (loadSound ("assets/Seite-104-Entfaltung-der-neuen-Weiblichkeit.mp3"));
   sounds.push (loadSound ("assets/Seite-190-Matriarchat.mp3"));
   sounds.push (loadSound ("assets/Seite-261-Vielzahl-der-Orientierungen.mp3"));
-  sounds.push (loadSound ("assets/Seite-290-Antiwerbung-mit-Störaktionen.mp3"));
+  sounds.push (loadSound ("assets/Seite-290-Antiwerbung-mit-Stoeraktionen.mp3"));
 let myFont;
 
 function preload() {
@@ -108,5 +108,13 @@ input.addEventListener("input", (event) => {
 function draw() {
   background(220);
  
+  function touchStarted() {
+  userStartAudio();
+}
+
+function mousePressed() {
+  userStartAudio();
+}
+
 }
 
