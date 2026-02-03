@@ -5,7 +5,7 @@ let sounds = [];
 
 let soundSymbol;
 
-let myFont; // <<< hinzugefügt
+let myFont; // <<< hinzugefügtt
 
 function preload(){
   sounds.push (loadSound ("assets/Seite-26-Geschichte-der-Ungleichheit.mp3"));
