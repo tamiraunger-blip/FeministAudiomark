@@ -65,24 +65,6 @@ input.addEventListener("input", (event) => {
 
 
 
-  soundSymbol.hide();
-  input.addEventListener ("input", (event) => {
-    for(let i = 0; i<words.length; i++){
-      if(event.target.value.trim().toLowerCase() == words[i]){
-
-        for(let j = 0; j<sounds.length; j++){
-          sounds[j].stop();
-        }
-        console.log(i + "-tes Wort entspricht der eingabe");
-        sounds[i].play();
-       soundSymbol.show();
-       
-
-      }
-    }
-  });
-
-
   setTimeout(() => {
     console.log("delayed");
     let elements = document.querySelectorAll(".delayed");
