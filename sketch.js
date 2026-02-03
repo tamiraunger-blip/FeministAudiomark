@@ -15,14 +15,10 @@ function preload(){
   sounds.push (loadSound ("assets/Seite-290-Antiwerbung-mit-Stoeraktionen.mp3"));
 let myFont;
 
-function preload() {
   myFont = loadFont('fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 
 
-
-  
-}
 
 function setup() { 
   let canvas = createCanvas(400, 400);
@@ -80,7 +76,15 @@ input.addEventListener("input", (event) => {
   function setup() {
   createCanvas(400, 200);
   textFont(myFont);
-  textSize(32);
+  textSize(32);  
+  
+  function touchStarted() {
+  userStartAudio();
+}
+
+function mousePressed() {
+  userStartAudio();
+}
 }
 
 }
@@ -90,14 +94,8 @@ input.addEventListener("input", (event) => {
 function draw() {
   background(220);
  }
- 
-  function touchStarted() {
-  userStartAudio();
-}
 
-function mousePressed() {
-  userStartAudio();
-}
+
 
 
 
