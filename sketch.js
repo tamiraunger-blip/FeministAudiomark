@@ -89,6 +89,7 @@ input.addEventListener("input", (event) => {
 
 function draw() {
   background(220);
+ }
  
   function touchStarted() {
   userStartAudio();
@@ -98,5 +99,5 @@ function mousePressed() {
   userStartAudio();
 }
 
-}
+
 
