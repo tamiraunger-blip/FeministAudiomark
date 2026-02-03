@@ -30,9 +30,7 @@ function mousePressed() {
 function setup() { 
   let canvas = createCanvas(400, 400);
   canvas.hide();
-  createCanvas(400, 200);
-  textFont(myFont);
-  textSize(32); 
+
 
 input = document.querySelector("#eingabe");
 soundSymbol = select("#sound");
