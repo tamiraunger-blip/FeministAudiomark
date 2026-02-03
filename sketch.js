@@ -18,12 +18,21 @@ let myFont;
   myFont = loadFont('fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 
+ function touchStarted() {
+  userStartAudio();
+}
+
+function mousePressed() {
+  userStartAudio();
+}
 
 
 function setup() { 
   let canvas = createCanvas(400, 400);
   canvas.hide();
-
+  createCanvas(400, 200);
+  textFont(myFont);
+  textSize(32); 
 
 input = document.querySelector("#eingabe");
 soundSymbol = select("#sound");
@@ -72,20 +81,6 @@ input.addEventListener("input", (event) => {
     });
       
   }, 1500);
-
-  function setup() {
-  createCanvas(400, 200);
-  textFont(myFont);
-  textSize(32);  
-  
-  function touchStarted() {
-  userStartAudio();
-}
-
-function mousePressed() {
-  userStartAudio();
-}
-}
 
 }
 
