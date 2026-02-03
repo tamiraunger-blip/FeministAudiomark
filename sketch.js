@@ -1,5 +1,5 @@
 let input;
-let words = ["geschichte der ungleich", "geschichte der ungleichheit", " entfaltung der neuen weib", "entfaltung der neuen weiblichkeit", "vielzahl der orientierungen", "matriarchat", "antiwerbung mit störaktionen"];
+let words = ["geschichte der ungleichheit", "entfaltung der neuen weiblichkeit", "matriarchat", "vielzahl der orientierungen",  "antiwerbung mit störaktionen"];
 
 let sounds = [];
 
@@ -8,10 +8,11 @@ let soundSymbol;
 let myFont; // <<< hinzugefügt
 
 function preload(){
- /* sound.push("assets/sound0.mp3");
-  sound.push("assets/sound1.mp3");
-  sound.push("assets/sound2.mp3");
-  ...*/
+  sounds.push (loadSound ("assets/Seite 26 Geschichte der Ungleichheit.wav"));
+  sounds.push (loadSound ("assets/Seite 104 Entfaltung der neuen Weiblichkeit.wav"));
+  sounds.push (loadSound ("assets/Seite 190 Matriarchat.wav"));
+  sounds.push (loadSound ("assets/Seite 261 Vielzahl der Orientierungen.wav"));
+  sounds.push (loadSound ("assets/Seite 290 Antiwerbung mit Störaktionen.wav"));
 let myFont;
 
 function preload() {
@@ -35,19 +36,32 @@ soundSymbol.hide();
 // Placeholder setzen
 input.placeholder = " Hier Text eingeben";
 
-// Event Listener für Input
 input.addEventListener("input", (event) => {
   const value = event.target.value.trim().toLowerCase();
+  let found = false;
 
-  if (words.includes(value)) {
-    input.placeholder = ""; // verschwindet
-    console.log(`Eingabe stimmt mit '${value}' überein`);
-    soundSymbol.show();     // Sound-Symbol optional anzeigen
-  } else {
-    input.placeholder = "Hier Text eingeben"; // wieder anzeigen
-    soundSymbol.hide();                     // Symbol ausblenden
+  for (let i = 0; i < words.length; i++) {
+    if (value === words[i]) {
+      // exaktes Wort → Sound starten
+      for (let j = 0; j < sounds.length; j++) {
+        sounds[j].stop();
+      }
+      sounds[i].play();
+      soundSymbol.show();
+      found = true;
+      break;
+    }
   }
-}); 
+
+  // sobald NICHT mehr alle Buchstaben stimmen
+  if (!found) {
+    for (let j = 0; j < sounds.length; j++) {
+      sounds[j].stop();
+    }
+    soundSymbol.hide();
+  }
+});
+
 
 
 
@@ -57,15 +71,17 @@ input.addEventListener("input", (event) => {
       if(event.target.value.trim().toLowerCase() == words[i]){
 
         for(let j = 0; j<sounds.length; j++){
-          //sound[j].stop();
+          sounds[j].stop();
         }
         console.log(i + "-tes Wort entspricht der eingabe");
-       // sound[i].play();
+        sounds[i].play();
        soundSymbol.show();
+       
 
       }
     }
   });
+
 
   setTimeout(() => {
     console.log("delayed");
