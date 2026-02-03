@@ -8,11 +8,11 @@ let soundSymbol;
 let myFont; // <<< hinzugefügt
 
 function preload(){
-  sounds.push (loadSound ("assets/Seite 26 Geschichte der Ungleichheit.wav"));
-  sounds.push (loadSound ("assets/Seite 104 Entfaltung der neuen Weiblichkeit.wav"));
-  sounds.push (loadSound ("assets/Seite 190 Matriarchat.wav"));
-  sounds.push (loadSound ("assets/Seite 261 Vielzahl der Orientierungen.wav"));
-  sounds.push (loadSound ("assets/Seite 290 Antiwerbung mit Störaktionen.wav"));
+  sounds.push (loadSound ("assets/Seite-26-Geschichte-der-Ungleichheit.wav"));
+  sounds.push (loadSound ("assets/Seite-104-Entfaltung-der-neuen-Weiblichkeit.wav"));
+  sounds.push (loadSound ("assets/Seite-190-Matriarchat.wav"));
+  sounds.push (loadSound ("assets/Seite-261-Vielzahl-der-Orientierungen.wav"));
+  sounds.push (loadSound ("assets/Seite-290-Antiwerbung-mit-Störaktionen.wav"));
 let myFont;
 
 function preload() {
